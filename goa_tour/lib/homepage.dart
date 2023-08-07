@@ -260,13 +260,16 @@ class _HomepageState extends State<Homepage>
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(12),
-                        child: Image.asset(
-                          "assets/northside-icon.png",
-                          width: MediaQuery.of(context).size.width / 3 - 30,
-                          height: 150,
-                          fit: BoxFit.cover,
+                      InkWell(
+                        onTap: () {},
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(12),
+                          child: Image.asset(
+                            "assets/northside-icon.png",
+                            width: MediaQuery.of(context).size.width / 3 - 30,
+                            height: 150,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                       const SizedBox(width: 10),
